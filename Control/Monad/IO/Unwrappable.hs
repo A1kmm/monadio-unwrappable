@@ -1,7 +1,7 @@
 {-# LANGUAGE TypeFamilies #-}
 -- | Contains a class and instance for MonadIO implementations that can be run directly in MonadIO and
 -- | then reconstructed to the original type, without changing the overall semantics.
-module Control.Monad.IO.Unwrappable (MonadIOUnwrappable, unwrapState, unwrapMonadIO, rewrapMonadIO)
+module Control.Monad.IO.Unwrappable (MonadIOWrapType, MonadIOStateType, MonadIOUnwrappable, unwrapState, unwrapMonadIO, rewrapMonadIO)
 where       
 
 import Control.Monad.Trans.Class
